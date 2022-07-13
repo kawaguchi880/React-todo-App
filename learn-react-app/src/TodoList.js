@@ -2,11 +2,14 @@
 // 
 
 import React from 'react'
+import Todo from './Todo';
 
-const TodoList = () => {
-  return (
-    <div>TodoList</div>
-  )
-}
+const TodoList = ({ todos, toggleTodo }) => {
+  return todos.map((todo) => <Todo todo={todo} key={todo.id} toggleTodo={toggleTodo} />);
+
+  // <div>{todos.todos}</div>
+  // 上記の{}内はjsを書くことができる．
+
+};
 
 export default TodoList
