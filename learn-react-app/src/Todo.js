@@ -14,6 +14,7 @@ const Todo = ({ todo, toggleTodo }) => {
           checked={todo.completed}
           readOnly
           onChange={handleTodoClick} />
+        {/* 変化したらhandleTodoClick関数を実行する． */}
       </label>
       {todo.name}
     </div>
