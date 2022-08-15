@@ -44,7 +44,7 @@ function App() {
       <TodoList todos={todos} toggleTodo={toggleTodo} />
       <input type="text" ref={todoNameRef} />
       {/* まず，refの付いたところから，文字列を取得する． */}
-      <button onClick={handleAddTodo}>タスクを追加するよ</button>
+      <button onClick={handleAddTodo}>タスクを追加するです</button>
       <button onClick={handleClear}>完了したタスクの削除</button>
       <div>残りのタスク:{todos.filter((todo) => !todo.completed).length}</div>
     </>
