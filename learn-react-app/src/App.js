@@ -24,6 +24,7 @@ function App() {
       // 展開されたものにカンマで右の情報(オブジェクト)を追加しているだけ．
     })
 
+
     todoNameRef.current.value = null;
   };
 
