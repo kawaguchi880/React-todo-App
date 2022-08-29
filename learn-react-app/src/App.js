@@ -15,6 +15,7 @@ function App() {
   // todoNameRefに格納される．
   const handleAddTodo = () => {
     //  タスクを追加する．
+
     // console.log(todoNameRef.current.value);
     const name = todoNameRef.current.value;
     if (name === "") return;
