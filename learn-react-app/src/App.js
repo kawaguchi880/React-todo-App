@@ -18,6 +18,7 @@ function App() {
     // console.log(todoNameRef.current.value);
     const name = todoNameRef.current.value;
     if (name === "") return;
+    
     setTodos((prevTodos) => {
       return [...prevTodos, { id: uuidv4(), name: name, completed: false }];
       //  [...]これはスプレッド構文でそれぞれのオブジェクトをlistで展開する．
